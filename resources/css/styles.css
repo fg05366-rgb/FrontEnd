@@ -190,5 +190,42 @@
     margin-bottom: 20px;
 }
 
+body{
+    background: gray;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    background: #eee;
+    padding: 20px;
+}
+
+.encabezado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 100px 100px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fila{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 100px 100px;
+    border-bottom: 4px solid black;
+    padding: 20px 0;
+}
+
+button{
+    background: gray;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
 

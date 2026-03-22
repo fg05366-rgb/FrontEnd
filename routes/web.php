@@ -32,3 +32,7 @@ Route::get('/register',function(){
 
     return view('register');
 });
+
+Route::get('/usuarios_admin',function(){
+return view('usuarios_admin');
+});
