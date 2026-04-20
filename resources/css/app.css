@@ -1,1 +1,12 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap/dist/css/bootstrap.min.css'; 
+
+.bd-placeholder-img {
+  display: block !important;
+  width: 100% !important;
+  height: 225px !important;
+  object-fit: cover !important;
+}
+
+.card-img-top {
+  object-fit: cover;
+}

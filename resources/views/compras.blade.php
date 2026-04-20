@@ -10,7 +10,7 @@
 <body>
     <div class="purchases-container">
         <div class="purchases-card">
-            <a  href="{{url('/')}}" class="nav-link active">Volver</a>
+            <a  href="{{url('/index')}}" class="nav-link active">Volver</a>
             <div class="purchases-header">
                 <i class="fas fa-shopping-bag"></i>
                 <h1>Mis Compras</h1>

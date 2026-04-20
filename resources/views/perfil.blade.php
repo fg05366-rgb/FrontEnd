@@ -11,7 +11,7 @@
 <body>
     <div class="profile-container">
         
-        <a href="{{url('/')}}" class="nav-link active">Volver</a>
+        <a href="{{url('/index')}}" class="nav-link active">Volver</a>
         <a href="{{url('/iniciar')}}" class="nav-link active">Iniciar Seción</a>
 
         <div class="profile-card">

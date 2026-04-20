@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver Producto</title>
+<title>{{ $product->name ?? 'Producto' }}</title>
    @vite(['resources/css/app.css','resources/js/app.js','resources/css/styless.css'])
 </head>
 <body>
@@ -16,7 +16,7 @@
             
             <div class="carousel-images">
                 <div class="carousel-slide">
-                    
+                    <img src="{{ $product->image_path ? asset('storage/' . $product->image_path) : asset('images/fondo.jpg') }}" alt="{{ $product->name }}" style="width: 100%; height: 400px; object-fit: cover;">
                 </div>
                 <div class="carousel-slide">
                     
@@ -38,21 +38,22 @@
 
         
         <div class="product-info">
+            <h1 class="product-name">{{ $product->name }}</h1>
             
             <div class="price-section">
-                <div class="price">$__________</div>
+                <div class="price">${{ number_format($product->price, 2) }}</div>
             </div>
 
             
             <div class="features-section">
                 <h3>Características</h3>
-                <div class="features-blank">
-                    
+                <div class="features-list">
+                    <p>{{ $product->description ?? 'Sin descripción disponible.' }}</p>
                 </div>
             </div>
 
            
-            <a href="#" class="buy-btn">Comprar ahora</a>
+            <a href="{{ route('compras') }}" class="buy-btn">Comprar ahora</a>
         </div>
     </div>
 </body>
